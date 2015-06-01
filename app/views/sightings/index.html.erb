@@ -1,5 +1,6 @@
 <div id="app"></div>
 
+<%= include_ember_script_tags :frontend %>
 <script>
 window.sightings = JSON.parse(<%= raw @sightings.to_json.to_json %>);
 </script>
