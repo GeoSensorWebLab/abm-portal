@@ -34,9 +34,17 @@ export default Ember.Component.extend({
     // setTimeout is necessary to avoid a race condition in Leaflet when it is
     // first loaded. See https://github.com/Leaflet/Leaflet/issues/2021
     setTimeout(function() {
-      map.fitBounds(markers.getBounds());
+      if (markers.getLayers().length > 0) {
+        map.fitBounds(markers.getBounds());
+      }
     }, 200);
   },
+
+  contentChanged: function() {
+    this.set('markerCache', {});
+    this.get('markers').clearLayers();
+    this.addModels(this.get('content'));
+  }.observes('content'),
 
   createMarkerForModel: function(model) {
     var marker = L.marker(model.get('coordinates'));
