@@ -3,7 +3,7 @@
     <h2>Sightings</h2>
 
     {{leaflet-map
-      content=content
+      content=activeContent
       selection=selected
     }}
   </div>
@@ -13,10 +13,10 @@
   <div class="col-md-12">
     <p>
       <ul class="list-inline">
-        <li><button class="btn btn-default">Show All</button></li>
-        <li><button class="btn btn-default">Show Last 4 Weeks</button></li>
-        <li><button class="btn btn-default">Show Last 7 Days</button></li>
-        <li><button class="btn btn-default">Show Last 24 Hours</button></li>
+        <li><button class="btn btn-default" {{action 'filter' 0}}>Show All</button></li>
+        <li><button class="btn btn-default" {{action 'filter' 2419200}}>Show Last 4 Weeks</button></li>
+        <li><button class="btn btn-default" {{action 'filter' 604800}}>Show Last 7 Days</button></li>
+        <li><button class="btn btn-default" {{action 'filter' 86400}}>Show Last 24 Hours</button></li>
       </ul>
     </p>
   </div>
@@ -27,7 +27,7 @@
     <h2>Table</h2>
 
     {{sighting-table
-      content=content
+      content=activeContent
       events=mapper
     }}
 
