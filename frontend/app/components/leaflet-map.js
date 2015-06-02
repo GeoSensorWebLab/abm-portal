@@ -90,6 +90,19 @@ export default Ember.Component.extend({
     this.set('selectedMarker', marker);
   },
 
+  highlightModel: function(model) {
+    var findMarker = this.get('markerCache')[model.get('id')];
+
+    if (findMarker) {
+      this.highlightMarker(findMarker);
+      this.get('map').panTo(findMarker.getLatLng());
+    }
+  },
+
+  updateSelectedModel: function() {
+    this.highlightModel(this.get('selection'));
+  }.observes('selection'),
+
   updateMarkerLayer: function() {
     var markers = this.get('markers'),
         cache = this.get('markerCache');

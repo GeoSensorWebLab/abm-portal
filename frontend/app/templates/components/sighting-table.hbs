@@ -1,0 +1,42 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Details</th>
+      <th>Observations</th>
+      <th>Signs</th>
+      <th>Status</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each item in content}}
+    <tr>
+      <td>{{item.created_at}}
+      </td>
+      <td>
+        <dl>
+          <dt>Adults</dt>
+          <dd>{{item.no_of_adults}}</dd>
+
+          <dt>Calves</dt>
+          <dd>{{item.no_of_calves}}</dd>
+        </dl>
+      </td>
+      <td>
+        {{item.unusual_observations}}
+      </td>
+      <td>
+        {{item.vsigns}}
+      </td>
+      <td>
+        "Status"
+      </td>
+      <td>
+        <button class="btn btn-default" {{action 'highlight' item}}>Map Highlight</button>
+        <button class="btn btn-default">View Comments</button>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>

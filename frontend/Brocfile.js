@@ -21,4 +21,7 @@ app.import('bower_components/leaflet/dist/leaflet.css');
 app.import('bower_components/leaflet.markercluster/dist/leaflet.markercluster.js');
 app.import('bower_components/leaflet.markercluster/dist/MarkerCluster.css');
 
+app.import('bower_components/DataTables/media/css/jquery.dataTables.css');
+app.import('bower_components/DataTables/media/js/jquery.dataTables.js');
+
 module.exports = app.toTree();
