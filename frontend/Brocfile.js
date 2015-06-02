@@ -18,5 +18,7 @@ var app = new EmberApp();
 // along with the exports of each module as its value.
 app.import('bower_components/leaflet/dist/leaflet.js');
 app.import('bower_components/leaflet/dist/leaflet.css');
+app.import('bower_components/leaflet.markercluster/dist/leaflet.markercluster.js');
+app.import('bower_components/leaflet.markercluster/dist/MarkerCluster.css');
 
 module.exports = app.toTree();

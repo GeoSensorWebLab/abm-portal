@@ -1,7 +1,13 @@
 import Ember from 'ember';
+import Sighting from '../../models/sighting';
 
 export default Ember.Route.extend({
   model: function() {
-    return window.sightings;
+    var store = this.store;
+    store.pushPayload('sighting', {
+      sightings: window.sightings
+    });
+
+    return store.all('sighting');
   }
 });
