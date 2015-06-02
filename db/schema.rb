@@ -11,9 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20150602202445) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "sighting_statuses", force: :cascade do |t|
+    t.integer  "sighting_id",                        null: false
+    t.string   "state",       default: "Unreviewed"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "sighting_statuses", ["sighting_id"], name: "index_sighting_statuses_on_sighting_id", unique: true, using: :btree
 
 end

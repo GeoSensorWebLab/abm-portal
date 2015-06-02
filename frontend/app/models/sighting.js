@@ -11,6 +11,8 @@ export default DS.Model.extend({
   unusual_observations: DS.attr(),
   vsigns: DS.attr(),
 
+  status: DS.belongsTo('sightingStatus'),
+
   coordinates: function() {
     return [this.get('lat'), this.get('lon')];
   }.property('lat', 'lon')

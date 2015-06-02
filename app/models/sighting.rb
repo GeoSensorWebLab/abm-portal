@@ -16,6 +16,7 @@ class Sighting
   ]
 
   attr_accessor *ATTRIBUTES
+  attr_accessor :status
 
   # Data Access Class Methods
   def self.all
@@ -38,10 +39,15 @@ class Sighting
   # Initialize a new object from a hash and only add the attributes known in
   # this version.
   def self.init(item)
-    inst = new()
+    inst = new(item["id"])
     ATTRIBUTES.each do |attr|
       inst.send(attr + "=", item[attr])
     end
     inst
+  end
+
+  def initialize(id)
+    self.id = id
+    self.status = SightingStatus.find_or_create_by(sighting_id: id)
   end
 end
