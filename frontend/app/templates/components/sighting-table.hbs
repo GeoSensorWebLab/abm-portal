@@ -1,6 +1,7 @@
 <table class="table">
   <thead>
     <tr>
+      <th>ID</th>
       <th>Date</th>
       <th>Details</th>
       <th>Observations</th>
@@ -12,8 +13,8 @@
   <tbody>
     {{#each item in content}}
     <tr>
-      <td>{{item.created_at}}
-      </td>
+      <td>{{item.id}}</td>
+      <td>{{item.created_at}}</td>
       <td>
         <dl>
           <dt>Adults</dt>

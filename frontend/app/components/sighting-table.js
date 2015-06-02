@@ -11,6 +11,10 @@ export default Ember.Component.extend({
   },
 
  didInsertElement: function() {
-    this.$("table").DataTable();
+    var table = this.$("table").DataTable();
+
+    this.get('events').on('select', function(model) {
+      table.search(model.get('id')).draw();
+    });
   }
 });

@@ -10,5 +10,9 @@ export default Ember.ArrayController.extend({
     });
 
     this._super.apply(this, arguments);
-  }
+  },
+
+  selectionChanged: function() {
+    this.get('mapper').trigger('select', this.get('selected'));
+  }.observes('selected')
 });
