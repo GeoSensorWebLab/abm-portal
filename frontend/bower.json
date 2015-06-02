@@ -15,6 +15,7 @@
     "leaflet": "https://github.com/Leaflet/Leaflet.git#v0.7.3",
     "leaflet.markercluster": "~0.4.0",
     "DataTables": "~1.10.7",
-    "momentjs": "~2.10.3"
+    "momentjs": "~2.10.3",
+    "typeahead.js": "~0.11.1"
   }
 }

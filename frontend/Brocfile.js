@@ -26,4 +26,6 @@ app.import('bower_components/DataTables/media/js/jquery.dataTables.js');
 
 app.import("bower_components/momentjs/moment.js");
 
+app.import("bower_components/typeahead.js/dist/typeahead.jquery.js");
+
 module.exports = app.toTree();
