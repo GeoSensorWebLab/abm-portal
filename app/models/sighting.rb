@@ -21,19 +21,19 @@ class Sighting
   # Data Access Class Methods
   def self.all
     raw = SightingAdapter.all
-    SightingSerializer.parse(raw).collect do |item|
+    SightingDeserializer.parse(raw).collect do |item|
       init(item)
     end
   end
 
   def self.find_by_id(id)
     raw = SightingAdapter.find_by_sighting_id(id)
-    init(SightingSerializer.parse(raw))
+    init(SightingDeserializer.parse(raw))
   end
 
   def self.find_by_user_id(id)
     raw = SightingAdapter.find_by_user_id(id)
-    init(SightingSerializer.parse(raw))
+    init(SightingDeserializer.parse(raw))
   end
 
   # Initialize a new object from a hash and only add the attributes known in
