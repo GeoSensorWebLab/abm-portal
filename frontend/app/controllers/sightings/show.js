@@ -8,7 +8,9 @@ export default Ember.Controller.extend({
   mapper: Ember.Object.createWithMixins(Ember.Evented),
 
   actions: {
-    saveStatus: function() {}
+    saveStatus: function() {
+      this.get('content.status').save();
+    }
   },
 
   selected: function() {
