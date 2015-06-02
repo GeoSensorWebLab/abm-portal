@@ -7,7 +7,7 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.resource('sightings', function() {
-    this.route('sighting', { path: '/sightings/:sighting_id' });
+    this.route('show', { path: ':sighting_id' });
   });
 });
 

@@ -35,7 +35,7 @@
       </td>
       <td>
         <button class="btn btn-default" {{action 'highlight' item}}>Map Highlight</button>
-        <button class="btn btn-default">View Comments</button>
+        {{link-to "View Comments" 'sightings.show' item class="btn btn-default"}}
       </td>
     </tr>
     {{/each}}

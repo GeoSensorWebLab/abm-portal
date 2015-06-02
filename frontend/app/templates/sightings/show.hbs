@@ -1,0 +1,54 @@
+<div class="row">
+  <div class="col-md-8">
+    <h2>Sighting Information</h2>
+  </div>
+  <div class="col-md-4">
+    <h4>
+      {{link-to "Sightings List" 'sightings.index' class="btn btn-default pull-right"}}
+    </h4>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+    <h3>Details</h3>
+
+    <dl>
+      <dt>ID</dt>
+      <dd>{{link-to content.id 'sightings.show'}}</dd>
+
+      <dt>Observer</dt>
+      <dd>{{content.created_by}}</dd>
+
+      <dt>Created At</dt>
+      <dd>{{content.created_at}}</dd>
+
+      <dt>Updated At</dt>
+      <dd>{{content.updated_at}}</dd>
+
+      <dt>Number of Adults</dt>
+      <dd>{{content.no_of_adults}}</dd>
+
+      <dt>Number of Calves</dt>
+      <dd>{{content.no_of_calves}}</dd>
+
+      <dt>Unusual Observations</dt>
+      <dd>{{content.unusual_observations}}</dd>
+
+      <dt>Visual Signs</dt>
+      <dd>{{content.vsigns}}</dd>
+    </dl>
+  </div>
+
+  <div class="col-md-8">
+    {{leaflet-map
+      content=contentAsList
+      selection=selected
+    }}
+
+    <p class="text-center">
+      <strong>Latitude</strong>: {{content.lat}}&deg; N&nbsp;
+      <strong>Longitude</strong>: {{content.lon}}&deg; E
+    </p>
+  </div>
+</div>
