@@ -12,10 +12,16 @@
     "jquery": "^1.11.1",
     "loader.js": "ember-cli/loader.js#3.2.0",
     "qunit": "~1.17.1",
-    "leaflet": "https://github.com/Leaflet/Leaflet.git#v0.7.3",
+    "leaflet": "0.7.3",
+    "proj4": "2.3.3",
+    "Proj4Leaflet": "https://github.com/kartena/Proj4Leaflet.git#4e445dd765d4e5cfcb156e423c6a0b7b65adf535",
     "leaflet.markercluster": "~0.4.0",
     "DataTables": "~1.10.7",
     "momentjs": "~2.10.3",
-    "typeahead.js": "~0.11.1"
+    "typeahead.js": "~0.11.1",
+    "polarmap": "~1.0.0"
+  },
+  "resolutions": {
+    "proj4": "2.3.3"
   }
 }

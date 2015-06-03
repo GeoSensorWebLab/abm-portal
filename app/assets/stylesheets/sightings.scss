@@ -8,6 +8,13 @@
   border: 1px solid #000;
 }
 
+.leaflet-control-layers-toggle {
+	background-image: url(/assets/layers.png);
+	}
+.leaflet-retina .leaflet-control-layers-toggle {
+	background-image: url(/assets/layers-2x.png);
+	}
+
 .twitter-typeahead {
   width: 100%;
 }
