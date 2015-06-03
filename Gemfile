@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
 
+gem 'active_model_serializers', '~> 0.8.1'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'ember-cli-rails'
 gem 'faraday'
