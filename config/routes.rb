@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     resources :comments
   end
   resources :sighting_statuses
+  resources :users
 
   root to: redirect('/sightings')
 end
