@@ -11,6 +11,7 @@ export default DS.Model.extend({
   unusual_observations: DS.attr(),
   vsigns: DS.attr(),
 
+  comments: DS.hasMany('comment', { async: true }),
   status: DS.belongsTo('sightingStatus'),
 
   coordinates: function() {

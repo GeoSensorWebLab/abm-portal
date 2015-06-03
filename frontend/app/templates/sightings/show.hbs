@@ -44,25 +44,39 @@
           value=content.status.state
           source=content.status.default_values
         }}
-    </dd>
-  </dl>
+      </dd>
+    </dl>
 
-  {{#if canSave}}
-  <button class="btn btn-primary" {{action 'saveStatus'}}>Save Status</button>
-  {{else}}
-  <button class="btn btn-default" disabled>Save Status</button>
-  {{/if}}
+    {{#if canSave}}
+    <button class="btn btn-primary" {{action 'saveStatus'}}>Save Status</button>
+    {{else}}
+    <button class="btn btn-default" disabled>Save Status</button>
+    {{/if}}
+  </div>
+
+  <div class="col-md-8">
+    {{leaflet-map
+      content=contentAsList
+      selection=selected
+    }}
+
+    <p class="text-center">
+      <strong>Latitude</strong>: {{content.lat}}&deg; N&nbsp;
+      <strong>Longitude</strong>: {{content.lon}}&deg; E
+    </p>
+  </div>
 </div>
 
-<div class="col-md-8">
-  {{leaflet-map
-    content=contentAsList
-    selection=selected
-  }}
+<div class="row">
+  <div class="col-md-12">
+    <h2>Comments</h2>
 
-  <p class="text-center">
-    <strong>Latitude</strong>: {{content.lat}}&deg; N&nbsp;
-    <strong>Longitude</strong>: {{content.lon}}&deg; E
-  </p>
-</div>
+    <h4>Form goes here</h4>
+
+    <ul>
+      {{#each comment in content.comments}}
+      <li>comment</li>
+      {{/each}}
+    </ul>
+  </div>
 </div>

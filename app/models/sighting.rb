@@ -51,4 +51,8 @@ class Sighting
     self.id = id
     self.status = SightingStatus.find_or_create_by(sighting_id: id)
   end
+
+  def comments
+    Comment.where(sighting_id: self.id)
+  end
 end
