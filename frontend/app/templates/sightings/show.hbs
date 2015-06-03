@@ -47,7 +47,7 @@
       </dd>
     </dl>
 
-    {{#if canSave}}
+    {{#if canSaveStatus}}
     <button class="btn btn-primary" {{action 'saveStatus'}}>Save Status</button>
     {{else}}
     <button class="btn btn-default" disabled>Save Status</button>
@@ -71,9 +71,7 @@
   <div class="col-md-12">
     <h2>Comments</h2>
 
-    <h4>Form goes here</h4>
-
-    <ul class="list-unstyled">
+    <ul class="list-unstyled comments">
       {{#each comment in content.comments}}
       <li>
         <div class="comment-item">
@@ -85,5 +83,25 @@
       </li>
       {{/each}}
     </ul>
+
+    <h4>Post Comment</h4>
+
+    {{#if commentNotices}}
+    <div class="alert alert-info">
+      {{commentNotices}}
+    </div>
+    {{/if}}
+
+    <p>
+      <textarea class="form-control" id="content" {{action 'commentChanged' on='keyUp'}}></textarea>
+    </p>
+
+    <p>
+      {{#if canSaveComment}}
+      <button class="btn btn-primary" {{action 'saveComment'}}>Save Comment</button>
+      {{else}}
+      <button class="btn btn-default" disabled>Save Comment</button>
+      {{/if}}
+    </p>
   </div>
 </div>
