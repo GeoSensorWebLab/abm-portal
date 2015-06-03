@@ -4,6 +4,8 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   before_filter :vary_by_accept
 
+  http_basic_authenticate_with name: ENV["BASIC_USER"], password: ENV["BASIC_PASS"]
+
   private
 
   # This adds a Vary for responses. This is useful when returning a URL that
