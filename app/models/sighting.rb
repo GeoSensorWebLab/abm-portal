@@ -1,6 +1,7 @@
 class Sighting
   include ActiveModel::AttributeMethods
   include ActiveModel::Model
+  include ActiveModel::SerializerSupport
 
   ATTRIBUTES = [
     'created_at',
