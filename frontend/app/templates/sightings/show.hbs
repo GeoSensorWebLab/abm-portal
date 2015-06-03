@@ -73,9 +73,16 @@
 
     <h4>Form goes here</h4>
 
-    <ul>
+    <ul class="list-unstyled">
       {{#each comment in content.comments}}
-      <li>comment</li>
+      <li>
+        <div class="comment-item">
+          {{comment.content}}
+        </div>
+        <div class="comment-foot">
+          {{date-ago content=comment.created_at}} - {{comment.created_at}}
+        </div>
+      </li>
       {{/each}}
     </ul>
   </div>
