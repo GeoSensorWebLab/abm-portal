@@ -58,7 +58,6 @@ export default Ember.Component.extend({
   },
 
   didInsertElement: function() {
-    L.Icon.Default.imagePath = '/assets';
     var that = this;
     var pMap = polarMap(this.get('element'), {
       permalink: false
