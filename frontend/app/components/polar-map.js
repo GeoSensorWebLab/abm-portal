@@ -116,6 +116,13 @@ export default Ember.Component.extend({
     }
   },
 
+  willDestroyElement: function() {
+    var map = this.get('map');
+    if (map) {
+      map.remove();
+    }
+  },
+
   willRemoveElement: function() {
     var map = this.get('map');
     if (map) {
