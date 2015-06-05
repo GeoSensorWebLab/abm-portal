@@ -17,7 +17,7 @@ Next use Rails to initialize a database for development:
 
 Now you can start up the local Rails server, and pass in the host address for the ABM database. This app assumes the data is located at `/biomap/<resource>`.
 
-    $ API_URL="http://example.com:8080" rails server
+    $ API_URL="http://example.com:8080" AUTH_USER="me" AUTH_PASS="me" rails server
 
 The site will be running on http://localhost:3000/ by default.
 
