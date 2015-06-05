@@ -15,6 +15,6 @@ App = Ember.Application.extend({
 
 loadInitializers(App, config.modulePrefix);
 
-L.Icon.Default.imagePath = '/assets';
+L.Icon.Default.imagePath = '/images';
 
 export default App;

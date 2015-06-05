@@ -8,10 +8,10 @@ export default Ember.Component.extend({
   selectedMarker: null,
 
   highlightedIcon: L.icon({
-    iconUrl: '/assets/marker-yellow.png',
-    iconRetinalUrl: '/assets/marker-yellow-2x.png',
-    shadowUrl: '/assets/marker-shadow.png',
-    shadowRetinaUrl: '/assets/marker-shadow.png'
+    iconUrl: '/images/marker-yellow.png',
+    iconRetinalUrl: '/images/marker-yellow-2x.png',
+    shadowUrl: '/images/marker-shadow.png',
+    shadowRetinaUrl: '/images/marker-shadow.png'
   }),
 
   addModels: function(list) {
