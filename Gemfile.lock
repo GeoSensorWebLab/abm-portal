@@ -132,6 +132,8 @@ GEM
     redis-activesupport (4.0.0)
       activesupport (~> 4)
       redis-store (~> 1.1.0)
+    redis-namespace (1.5.2)
+      redis (~> 3.0, >= 3.0.4)
     redis-rack (1.5.0)
       rack (~> 1.5)
       redis-store (~> 1.1.0)
@@ -197,6 +199,7 @@ DEPENDENCIES
   pg
   rails (= 4.2.1)
   rails_12factor
+  redis-namespace
   redis-rails
   responders
   sass-rails (~> 5.0)
