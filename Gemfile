@@ -5,13 +5,18 @@ ruby '2.2.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
 
+gem 'dotenv'
+gem 'dotenv-deployment'
+
 gem 'active_model_serializers', '~> 0.8.1'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'ember-cli-rails'
 gem 'faraday'
+gem 'foreman'
 gem 'jbuilder', '~> 2.0'
 gem 'jquery-rails'
 gem 'pg'
+gem 'rails_12factor'
 gem 'responders'
 gem 'sass-rails', '~> 5.0'
 gem 'therubyracer', platforms: :ruby
