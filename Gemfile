@@ -5,8 +5,7 @@ ruby '2.2.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
 
-gem 'dotenv'
-gem 'dotenv-deployment'
+gem 'dotenv-rails'
 
 gem 'active_model_serializers', '~> 0.8.1'
 gem 'coffee-rails', '~> 4.1.0'
