@@ -7,6 +7,7 @@ gem 'rails', '4.2.1'
 
 gem 'dotenv-rails'
 
+gem 'airbrake'
 gem 'active_model_serializers', '~> 0.8.1'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'ember-cli-rails'

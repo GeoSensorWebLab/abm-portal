@@ -38,6 +38,9 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
+    airbrake (4.2.1)
+      builder
+      multi_json
     arel (6.0.0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
@@ -190,6 +193,7 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_serializers (~> 0.8.1)
+  airbrake
   byebug
   coffee-rails (~> 4.1.0)
   dotenv-rails
