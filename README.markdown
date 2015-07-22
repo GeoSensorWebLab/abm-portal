@@ -23,7 +23,7 @@ The site will be running on http://localhost:3000/ by default.
 
 ## Deployment
 
-TODO: Write up deploying to a Heroku/dokku instance
+Deployment is currently set up for an instance of [Dokku](https://github.com/progrium/dokku) running on the [Cybera Rapid Access Cloud](http://www.cybera.ca/projects/cloud-resources/rapid-access-cloud/). See the [deployment documentation for Dokku](http://progrium.viewdocs.io/dokku/application-deployment/) for more instructions.
 
 ## License
 
