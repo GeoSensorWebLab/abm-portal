@@ -24,3 +24,11 @@ The site will be running on http://localhost:3000/ by default.
 ## Deployment
 
 TODO: Write up deploying to a Heroku/dokku instance
+
+## License
+
+MIT License
+
+## Authors
+
+James Badger <jpbadger@ucalgary.ca>
