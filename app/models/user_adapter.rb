@@ -1,3 +1,4 @@
+# UserAdapter is responsible for interfacing with the ABM Server.
 class UserAdapter
   class << self
     HOST = ENV['API_URL']
