@@ -12,6 +12,7 @@ export default DS.Model.extend({
   vsigns: DS.attr(),
 
   comments: DS.hasMany('comment', { async: true }),
+  creator: DS.belongsTo('user', { async: true }),
   status: DS.belongsTo('sightingStatus'),
 
   coordinates: function() {

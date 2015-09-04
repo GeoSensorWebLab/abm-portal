@@ -18,7 +18,19 @@
       <dd>{{link-to content.id 'sightings.show'}}</dd>
 
       <dt>Observer</dt>
-      <dd>{{content.created_by}}</dd>
+      <dd>{{content.creator.name}}</dd>
+
+      <dt>Observer Email</dt>
+      <dd>
+        {{#if content.creator.email}}
+        <a href="mailto:{{content.creator.email}}">{{content.creator.email}}</a>
+        {{else}}
+        No Email Available
+        {{/if}}
+      </dd>
+
+      <dt>Observer Address</dt>
+      <dd>{{content.creator.address}}</dd>
 
       <dt>Created At</dt>
       <dd>{{content.created_at}}</dd>

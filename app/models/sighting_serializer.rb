@@ -7,7 +7,8 @@ class SightingSerializer < ActiveModel::Serializer
   def attributes
     hash = super
     hash.merge!(links: {
-      comments: sighting_comments_path(self.id)
+      comments: sighting_comments_path(self.id),
+      creator: user_path(self.created_by)
     })
     hash
   end
