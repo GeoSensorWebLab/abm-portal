@@ -29,7 +29,7 @@ class User
     end
 
     users.find do |item|
-      item.id == id
+      item.id.to_s == id
     end
   end
 
