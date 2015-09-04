@@ -21,5 +21,14 @@ class UserAdapter
       end
       response.body
     end
+
+    def find_by_id(id)
+      conn = Faraday.new(url: HOST)
+      response = conn.get do |req|
+        req.url PATH
+        req.params['user_id'] = id
+      end
+      response.body
+    end
   end
 end

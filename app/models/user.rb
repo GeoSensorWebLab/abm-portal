@@ -23,7 +23,7 @@ class User
   end
 
   def self.find_by_id(id)
-    raw = UserAdapter.all
+    raw = UserAdapter.find_by_id(id)
     users = UserDeserializer.parse(raw).collect do |item|
       init(item)
     end
