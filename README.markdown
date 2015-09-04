@@ -8,6 +8,7 @@ Your dev environment will need the following libraries:
 
 * Ruby 2.2.1 or newer
 * Postgresql 9.3 or newer
+* Node 0.12.x or newer
 
 Clone the repository. In the repo, run `bundle install` to install the required Ruby gems. Run `bower install` to install the client-side libraries.
 
@@ -15,9 +16,14 @@ Next use Rails to initialize a database for development:
 
     $ rake db:create db:migrate
 
+Then install the libraries for the Ember frontend:
+
+    $ cd frontend
+    $ npm install
+
 Now you can start up the local Rails server, and pass in the host address for the ABM database. This app assumes the data is located at `/biomap/<resource>`.
 
-    $ API_URL="http://example.com:8080" AUTH_USER="me" AUTH_PASS="me" rails server
+    $ API_URL="http://example.com:8080" BASIC_USER="me" BASIC_PASS="me" rails server
 
 The site will be running on http://localhost:3000/ by default.
 
