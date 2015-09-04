@@ -35,7 +35,9 @@ export default Ember.Component.extend({
     // first loaded. See https://github.com/Leaflet/Leaflet/issues/2021
     setTimeout(function() {
       if (markers.getLayers().length > 0) {
-        map.fitBounds(markers.getBounds());
+        map.fitBounds(markers.getBounds(), {
+          padding: [10, 10]
+        });
       }
     }, 200);
   },
