@@ -5,7 +5,7 @@ export default Ember.Controller.extend({
     return [this.get('content')];
   }.property('content'),
 
-  mapper: Ember.Object.createWithMixins(Ember.Evented),
+  mapper: Ember.Object.extend(Ember.Evented).create(),
 
   actions: {
     commentChanged: function() {

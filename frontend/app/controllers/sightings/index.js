@@ -5,7 +5,7 @@ export default Ember.Controller.extend({
     return this.get('content');
   }.property(),
 
-  mapper: Ember.Object.createWithMixins(Ember.Evented),
+  mapper: Ember.Object.extend(Ember.Evented).create(),
 
   actions: {
     filter: function(interval) {
@@ -20,9 +20,9 @@ export default Ember.Controller.extend({
   filteredContent: function(interval) {
     var now = moment();
 
-    return Ember.ArrayProxy.createWithMixins(Ember.SortableMixin, {
+    return Ember.ArrayProxy.extend(Ember.SortableMixin, {
       content: this.get('content')
-    }).filter(function(item) {
+    }).create().filter(function(item) {
       var date = moment(item.get('created_at'));
       return (now - date)/1000 <= interval;
     });
