@@ -44,8 +44,10 @@ export default Ember.Component.extend({
 
   contentChanged: function() {
     this.set('markerCache', {});
-    this.get('markers').clearLayers();
-    this.addModels(this.get('content'));
+    if (this.get('markers')) {
+      this.get('markers').clearLayers();
+      this.addModels(this.get('content'));
+    }
   }.observes('content'),
 
   createMarkerForModel: function(model) {
@@ -112,9 +114,11 @@ export default Ember.Component.extend({
     var markers = this.get('markers'),
         cache = this.get('markerCache');
 
-    for (var id in cache) {
-      var marker = cache[id];
-      markers.addLayer(marker);
+    if (markers && cache) {
+      for (var id in cache) {
+        var marker = cache[id];
+        markers.addLayer(marker);
+      }
     }
   },
 
