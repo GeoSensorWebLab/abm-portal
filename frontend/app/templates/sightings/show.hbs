@@ -84,7 +84,7 @@
     <h2>Comments</h2>
 
     <ul class="list-unstyled comments">
-      {{#each content.comments as |comment|}}
+      {{#each content.comments key="id" as |comment|}}
       <li>
         <div class="comment-item">
           {{comment.content}}
