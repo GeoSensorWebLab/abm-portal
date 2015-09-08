@@ -2,7 +2,11 @@
   "predef": [
     "document",
     "window",
-    "-Promise"
+    "-Promise",
+    "L",
+    "polarMap",
+    "$",
+    "moment"
   ],
   "browser": true,
   "boss": true,
