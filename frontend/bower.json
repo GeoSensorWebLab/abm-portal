@@ -9,7 +9,7 @@
     "ember-qunit": "0.4.10",
     "ember-qunit-notifications": "0.0.7",
     "ember-resolver": "~0.1.21",
-    "jquery": "^1.11.3",
+    "jquery": "^1.12.4",
     "loader.js": "ember-cli/loader.js#3.3.0",
     "qunit": "~1.17.1",
     "leaflet": "0.7.3",
