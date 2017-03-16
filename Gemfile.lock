@@ -79,7 +79,7 @@ GEM
       thor (>= 0.14, < 2.0)
     json (1.8.3)
     kgio (2.9.3)
-    libv8 (3.16.14.11)
+    libv8 (3.16.14.19)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.3)
@@ -164,8 +164,8 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
-    therubyracer (0.12.2)
-      libv8 (~> 3.16.14.0)
+    therubyracer (0.12.3)
+      libv8 (~> 3.16.14.15)
       ref
     thor (0.19.1)
     thread_safe (0.3.5)
@@ -216,5 +216,8 @@ DEPENDENCIES
   unicorn
   web-console (~> 2.0)
 
+RUBY VERSION
+   ruby 2.2.6p396
+
 BUNDLED WITH
-   1.10.3
+   1.14.6
