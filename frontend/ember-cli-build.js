@@ -20,6 +20,7 @@ module.exports = function(defaults) {
     app.import('bower_components/leaflet/dist/leaflet.js');
     app.import('bower_components/leaflet/dist/leaflet.css');
     app.import('bower_components/leaflet.markercluster/dist/leaflet.markercluster.js');
+    app.import('bower_components/leaflet.markercluster/dist/MarkerCluster.Default.css');
     app.import('bower_components/leaflet.markercluster/dist/MarkerCluster.css');
 
     app.import('bower_components/proj4/dist/proj4.js');
