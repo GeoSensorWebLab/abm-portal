@@ -33,7 +33,7 @@
     "ember-cli-qunit": "0.3.20",
     "ember-cli-rails-addon": "0.0.13",
     "ember-cli-uglify": "1.0.1",
-    "ember-data": "1.13.8",
+    "ember-data": "1.13.16",
     "ember-disable-proxy-controllers": "^0.7.0",
     "ember-export-application-global": "^1.0.2"
   },
