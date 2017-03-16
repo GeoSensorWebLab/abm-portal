@@ -23,13 +23,13 @@ module.exports = function(defaults) {
     app.import('bower_components/leaflet.markercluster/dist/MarkerCluster.css');
 
     app.import('bower_components/proj4/dist/proj4.js');
-    app.import('bower_components/Proj4Leaflet/src/proj4leaflet.js');
+    app.import('bower_components/proj4leaflet/src/proj4leaflet.js');
 
     app.import('bower_components/polarmap/dist/polarmap.js');
     app.import('bower_components/polarmap/css/polarmap.css');
 
-    app.import('bower_components/DataTables/media/css/jquery.dataTables.css');
-    app.import('bower_components/DataTables/media/js/jquery.dataTables.js');
+    app.import('bower_components/datatables/media/css/jquery.dataTables.css');
+    app.import('bower_components/datatables/media/js/jquery.dataTables.js');
 
     app.import("bower_components/momentjs/moment.js");
 

@@ -14,15 +14,14 @@
     "qunit": "~1.17.1",
     "leaflet": "0.7.3",
     "proj4": "2.3.3",
-    "Proj4Leaflet": "https://github.com/kartena/Proj4Leaflet.git#4e445dd765d4e5cfcb156e423c6a0b7b65adf535",
+    "proj4leaflet": "https://github.com/kartena/proj4leaflet.git#4e445dd765d4e5cfcb156e423c6a0b7b65adf535",
     "leaflet.markercluster": "~0.4.0",
-    "DataTables": "~1.10.8",
+    "datatables": "~1.10.8",
     "momentjs": "~2.10.6",
     "typeahead.js": "~0.11.1",
     "polarmap": "~1.0.1"
   },
   "resolutions": {
-    "proj4": "2.3.3",
-    "Proj4Leaflet": "0.7.1"
+    "proj4": "2.3.3"
   }
 }
