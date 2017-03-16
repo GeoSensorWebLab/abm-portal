@@ -8,7 +8,8 @@ Your dev environment will need the following libraries:
 
 * Ruby 2.2.1 or newer
 * Postgresql 9.3 or newer
-* Node 0.12.x or newer
+* Node 6.10.0
+* NPM 4.4.1
 
 Clone the repository. In the repo, run `bundle install` to install the required Ruby gems. Run `bower install` to install the client-side libraries.
 
