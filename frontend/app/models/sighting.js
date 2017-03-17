@@ -13,7 +13,7 @@ export default DS.Model.extend({
 
   comments: DS.hasMany('comment', { async: true }),
   creator: DS.belongsTo('user', { async: true }),
-  status: DS.belongsTo('sightingStatus'),
+  status: DS.belongsTo('sightingStatus', { async: false }),
 
   coordinates: function() {
     return [this.get('lat'), this.get('lon')];
