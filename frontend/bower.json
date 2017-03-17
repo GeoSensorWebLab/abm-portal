@@ -19,7 +19,8 @@
     "datatables": "~1.10.13",
     "momentjs": "~2.17.1",
     "typeahead.js": "~0.11.1",
-    "polarmap": "~1.2.0"
+    "polarmap": "~1.2.0",
+    "active-model-adapter": "^2.1.1"
   },
   "resolutions": {
     "proj4": "2.4.3"
