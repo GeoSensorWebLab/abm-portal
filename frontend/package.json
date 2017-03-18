@@ -10,7 +10,7 @@
   "scripts": {
     "build": "ember build",
     "start": "ember server",
-    "postinstall": "node_modules/bower/bin/bower install",
+    "postinstall": "npm install -g bower && node_modules/bower/bin/bower install",
     "test": "ember test"
   },
   "repository": "",
