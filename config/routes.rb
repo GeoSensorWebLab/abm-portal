@@ -6,5 +6,7 @@ Rails.application.routes.draw do
   resources :sighting_statuses
   resources :users
 
+  mount_ember_app :frontend, to: "/"
+
   root to: redirect('/sightings')
 end

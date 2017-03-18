@@ -1,12 +1,13 @@
 import Ember from 'ember';
 import config from './config/environment';
 
-var Router = Ember.Router.extend({
-  location: config.locationType
+const Router = Ember.Router.extend({
+  location: config.locationType,
+  rootURL: config.rootURL
 });
 
 Router.map(function() {
-  this.resource('sightings', function() {
+  this.route('sightings', { resetNamespace: true }, function() {
     this.route('show', { path: ':sighting_id' });
   });
 });
