@@ -6,7 +6,7 @@ This application is a web front end to the Arctic Bio Map server database. It pr
 
 Your dev environment will need the following libraries:
 
-* Ruby 2.2.1 or newer
+* Ruby 2.3.3 or newer
 * Postgresql 9.3 or newer
 * Node 6.10.0
 * NPM 4.4.1
