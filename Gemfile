@@ -18,8 +18,6 @@ gem 'jquery-rails', '~> 4.0.5'
 gem 'pg', '~> 0.18.3'
 gem 'rack-cache', '~> 1.2'
 gem 'rails_12factor'
-gem 'redis-namespace'
-gem 'redis-rails'
 gem 'responders'
 gem 'sass-rails', '~> 5.0'
 gem 'therubyracer', platforms: :ruby

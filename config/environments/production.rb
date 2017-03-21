@@ -1,13 +1,10 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-  redis = Redis.new(url: ENV['REDIS_URL'])
-  $redis = Redis::Namespace.new(ENV['REDIS_NAMESPACE'], redis: redis)
-
-  config.cache_store = :redis_store, $redis.client.id + "/cache"
+  config.cache_store = :memory_store
 
   config.action_dispatch.rack_cache = {
-    metastore:   $redis.client.id + "/metastore",
-    entitystore: $redis.client.id + "/entitystore"
+    metastore:    'file:/var/cache/rack/meta',
+    entitystore:  'file:/var/cache/rack/body'
   }
 
   # Code is not reloaded between requests.
