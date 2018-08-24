@@ -32,6 +32,12 @@ The site will be running on http://localhost:3000/ by default.
 
 Deployment is currently set up for an instance of [Dokku](https://github.com/progrium/dokku) running on the [Cybera Rapid Access Cloud](http://www.cybera.ca/projects/cloud-resources/rapid-access-cloud/). See the [deployment documentation for Dokku](http://progrium.viewdocs.io/dokku/application-deployment/) for more instructions.
 
+```sh
+$ git remote add dokku dokku@sarcee:abm-portal
+$ git push dokku master
+$ ssh dokku@sarcee domains:add abm-portal sightings.arcticconnect.ca arctic-bio-map.gswlab.ca sightings.arcticconnect.org
+```
+
 ## License
 
 MIT License
