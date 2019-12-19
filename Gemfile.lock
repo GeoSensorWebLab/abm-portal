@@ -99,7 +99,7 @@ GEM
     non-stupid-digest-assets (1.0.9)
       sprockets (>= 2.0)
     pg (0.18.4)
-    rack (1.6.11)
+    rack (1.6.12)
     rack-cache (1.9.0)
       rack (>= 0.4)
     rack-test (0.6.3)
