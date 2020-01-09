@@ -3,7 +3,7 @@ ruby '2.6.3'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.8'
+gem 'rails', '4.2.11.1'
 
 gem 'dotenv-rails', '~> 2.0.2'
 
